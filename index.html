@@ -1301,6 +1301,7 @@ nav .logo, .hero-wordmark {
     p { text-wrap: pretty; }
     .hero-checks li { text-wrap: balance; }
         .profile-name { white-space: nowrap; }
+      .modal-process-note { font-size: 13px; line-height: 1.7; color: var(--gray-mid); margin: -4px 0 12px; word-break: keep-all; }
   </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
@@ -1463,7 +1464,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
         <li><strong>파이프라인 설계</strong> — 나노바나나·Gemini → Photoshop → Kling(Higgsfield), 신규 컷 <strong>3주 → 4일</strong></li>
         <li><strong>일관성 유지</strong> — 역할별 레퍼런스 템플릿으로 캐릭터 톤 고정, 생성 AI 장면을 넣은 릴스 <strong>274만</strong></li>
         <li><strong>합성·후반</strong> — 기존 장면과 AI 생성물을 Photoshop으로 합성·보정, Premiere·AE로 마무리</li>
-        <li><strong>여러 도메인</strong> — 영화(극장판 예고편)·캐릭터 IP·브랜드(롯데칠성) 콘텐츠 제작</li>
+        <li><strong>작업 범위</strong> — 극장판 홍보 영상·캐릭터 IP 숏폼·롯데칠성 브랜디드 콘텐츠</li>
       </ul>
     </div>
   </div>
@@ -1830,6 +1831,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <a class="modal-showcase-item" href="https://www.instagram.com/reel/DFFISwEv5pl/" target="_blank"><img src="bbang-gihun-thumb.png" alt=""><div class="play-btn"><span>▶</span></div></a>
       <a class="modal-showcase-item" href="https://www.instagram.com/reel/DThhrkEEhde/" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/쇼미더머랭.png" alt=""><div class="play-btn"><span>▶</span></div></a>
     </div>
+    <div class="modal-section-title">Process</div>
+    <p class="modal-process-note">흑백요리사 패러디 '흑백이발사 2'용 — 원본 캐릭터에 Gemini로 셰프복을 입히고, 같은 캐릭터를 주방 장면으로 확장한 뒤 릴스로 편집</p>
+    <div class="modal-showcase" style="grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 200px 160px;">
+      <a class="modal-showcase-item" style="grid-column:1; grid-row:1; aspect-ratio:unset; height:200px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20원본.jpg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20원본.jpg" alt="원본 캐릭터" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">원본</span></a>
+      <a class="modal-showcase-item" style="grid-column:2; grid-row:1; aspect-ratio:unset; height:200px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20의상%20수정.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20의상%20수정.jpeg" alt="AI 의상 생성" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
+      <a class="modal-showcase-item" style="grid-column:1/3; grid-row:2; aspect-ratio:unset; height:160px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20이미지.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20이미지.jpeg" alt="AI 씬 생성" style="width:100%; height:100%; object-fit:cover; object-position:center 65%; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
+      <a class="modal-showcase-item" style="grid-column:3; grid-row:1/3; aspect-ratio:unset; height:364px; display:block;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20릴스2.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20릴스2.png" alt="최종 릴스" style="width:100%; height:100%; object-fit:cover; object-position:center 32%; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">최종 영상</span></a>
+    </div>
     <div class="modal-section-title">Why</div>
     <ul class="modal-list">
       <li><strong>기여도:</strong> 기획·제작·편집 전 과정 <strong>100%</strong> 직접 수행 (1인 제작)</li>
@@ -1867,13 +1876,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <li>기존 자산의 한계는 콘텐츠가 아니라 '제작 방식'의 한계였다는 점 — 소재를 새로 만들자 트렌드 반영이 가능해짐</li>
       <li>새 제작 방식은 개인 노하우로 두지 않고 팀이 반복할 수 있는 템플릿으로 남길 때 비로소 '변화'가 된다는 인사이트 확보</li>
     </ul>
-    <div class="modal-section-title">Process</div>
-    <div class="modal-showcase" style="grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 200px 160px;">
-      <a class="modal-showcase-item" style="grid-column:1; grid-row:1; aspect-ratio:unset; height:200px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20원본.jpg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20원본.jpg" alt="원본 캐릭터" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">원본</span></a>
-      <a class="modal-showcase-item" style="grid-column:2; grid-row:1; aspect-ratio:unset; height:200px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20의상%20수정.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20의상%20수정.jpeg" alt="AI 의상 생성" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
-      <a class="modal-showcase-item" style="grid-column:1/3; grid-row:2; aspect-ratio:unset; height:160px;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20이미지.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20이미지.jpeg" alt="AI 씬 생성" style="width:100%; height:100%; object-fit:cover; object-position:center 65%; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
-      <a class="modal-showcase-item" style="grid-column:3; grid-row:1/3; aspect-ratio:unset; height:364px; display:block;" href="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20릴스2.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20릴스2.png" alt="최종 릴스" style="width:100%; height:100%; object-fit:cover; object-position:center 32%; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">최종 영상</span></a>
-    </div>
   </div>
 </div>
 
@@ -1892,6 +1894,14 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <a class="modal-showcase-item" href="https://www.youtube.com/watch?v=WdUixeb165s" target="_blank"><img src="https://img.youtube.com/vi/WdUixeb165s/mqdefault.jpg" alt=""><div class="play-btn"><span>▶</span></div></a>
       <a class="modal-showcase-item" href="https://www.youtube.com/watch?v=QhIEiNeHA3A&t=13s" target="_blank"><img src="https://img.youtube.com/vi/QhIEiNeHA3A/mqdefault.jpg" alt=""><div class="play-btn"><span>▶</span></div></a>
       <a class="modal-showcase-item" href="https://www.youtube.com/watch?v=zf281ivYPIQ" target="_blank"><img src="https://img.youtube.com/vi/zf281ivYPIQ/mqdefault.jpg" alt=""><div class="play-btn"><span>▶</span></div></a>
+    </div>
+    <div class="modal-section-title">Process</div>
+    <p class="modal-process-note">4주차 이벤트 영상용 — 본편 장면 속 빨간 가방을 4주차 선물(에코백)로 교체. 캐릭터·굿즈·손에 든 모습 레퍼런스 3장과 "포즈·표정·배경은 그대로" 조건을 Gemini에 넣어 수정한 뒤, Kling으로 영상화해 이벤트 영상에 삽입</p>
+    <div class="modal-showcase" style="grid-template-columns: repeat(2, 1fr);">
+      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20원본.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20원본.jpeg" alt="원본" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">원본</span></a>
+      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20제미나이.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20제미나이.png" alt="Gemini 수정" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
+      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20영상화.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20영상화.png" alt="Kling 영상화" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Kling 영상화</span></a>
+      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20릴스.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20릴스.png" alt="최종 영상" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">최종 영상</span></a>
     </div>
     <div class="modal-section-title">Why</div>
     <ul class="modal-list">
@@ -1929,13 +1939,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <li>옴니버스라도 컨셉이 확실하면 예고편은 하나의 이야기로 묶을 수 있고, 그쪽이 에피소드 나열보다 기대감을 만든다는 점을 확인</li>
       <li>새 장면이 필요할 땐 원작 캐릭터의 정체성 유지를 최우선으로 둬야 홍보물 전체의 일관성이 지켜진다는 인사이트 도출</li>
     </ul>
-    <div class="modal-section-title">Process</div>
-    <div class="modal-showcase" style="grid-template-columns: repeat(2, 1fr);">
-      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20원본.jpeg" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20원본.jpeg" alt="원본" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">원본</span></a>
-      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20제미나이.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20제미나이.png" alt="Gemini 수정" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Gemini 수정</span></a>
-      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20영상화.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20영상화.png" alt="Kling 영상화" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">Kling 영상화</span></a>
-      <a class="modal-showcase-item" href="https://hojinyu315.github.io/naverwebtoon/images/초코%20릴스.png" target="_blank"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20릴스.png" alt="최종 영상" style="width:100%; height:100%; object-fit:cover; display:block;"><span style="position:absolute; bottom:8px; left:8px; background:rgba(0,0,0,0.6); color:#fff; font-size:10px; font-weight:600; padding:3px 8px; border-radius:4px; letter-spacing:0.3px;">최종 영상</span></a>
-    </div>
   </div>
 </div>
 
