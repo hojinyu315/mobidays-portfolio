@@ -23,11 +23,11 @@
       --gray-light: #f6f6f6;
       --border: #e0e0e0;
       --white: #fff;
-      --accent: #2B2BD9;
-      --accent-dark: #5A1FCC;
-      --accent-soft: #F0E9FF;
-      --pink: #000080;
-      --grad: linear-gradient(90deg, #2B2BD9 0%, #000080 100%);
+      --accent: #5DA7AC;
+      --accent-dark: #3E8C92;
+      --accent-soft: #E6F3F4;
+      --pink: #3E8C92;
+      --grad: linear-gradient(90deg, #5DA7AC 0%, #3E8C92 100%);
       --dark-bg: #121212;
       --nav-bg: #121212;
       --card-bg: #1C1C1C;
@@ -48,7 +48,7 @@
     #scroll-bg {
       position: fixed;
       inset: 0;
-      background: linear-gradient(118deg, #00004A 0%, #000070 40%, #000080 70%, #12129E 100%);
+      background: linear-gradient(118deg, #181D28 0%, #1C2338 40%, #212B56 72%, #253371 100%);
       overflow: hidden;
       z-index: -1;
       pointer-events: none;
@@ -951,8 +951,8 @@
     .philosophy-card { position: relative; overflow: hidden; }
     .philosophy-card::after { content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background: var(--accent); transform: scaleX(0); transform-origin: left; transition: transform 0.45s ease; }
     .philosophy-card:hover::after { transform: scaleX(1); }
-    .philosophy-card:nth-child(2)::after { background: #FFD600; }
-    .philosophy-card:nth-child(3)::after { background: #000080; }
+    .philosophy-card:nth-child(2)::after { background: #5DA7AC; }
+    .philosophy-card:nth-child(3)::after { background: #5DA7AC; }
     .timeline::after { content: ''; position: absolute; left: 80px; top: 6px; width: 1px; height: var(--timeline-progress, 0%); background: var(--accent); opacity: 1; transition: height 0.2s ease; pointer-events: none; }
     .timeline-dot { transition: transform 0.3s ease, background 0.3s ease; }
     .timeline-item.is-past .timeline-dot { transform: translateX(-50%) scale(1.7); background: var(--accent); }
@@ -1157,14 +1157,14 @@
     .sec-night .tag:hover { background: #FFFFFF; color: #0D0D0D; border-color: #FFFFFF; }
 
     .sec-dark {
-      background: #F3F4FF;
+      background: #F2F8F8;
       border-bottom: 1px solid var(--border);
       --white: #111111;
       --on-dark: #555555;
       --on-dark-dim: #8A8F96;
       --on-dark-line: #E4E0F2;
       --card-bg: #FFFFFF;
-      --dark-bg: #F3F4FF;
+      --dark-bg: #F2F8F8;
     }
     .sec-dark .section-label { color: var(--on-dark-dim); }
     .sec-dark .section-title { color: var(--white); border-bottom-color: var(--accent); }
@@ -1214,7 +1214,7 @@ nav ul a:is(:hover, :focus-visible, .active)::after { transform: scaleX(1); }
 .section-title, .sec-dark .section-title { position: relative; border-bottom-color: transparent; }
 .section-title::after {
   content: ''; position: absolute; left: 0; right: 0; bottom: -2px; height: 2px;
-  background: linear-gradient(90deg, #2B2BD9, #FFD600 55%, #000080);
+  background: linear-gradient(90deg, #5DA7AC, #7CC0C4 55%, #3E8C92);
   transform-origin: left; transform: scaleX(1);
 }
 html.brand-motion .brand-reveal {
@@ -1301,20 +1301,20 @@ nav .logo, .hero-wordmark {
     #aiworks { background: var(--white); border-bottom: 1px solid var(--border); }
     .aiw-lead { font-size: 15px; color: var(--gray-mid); margin: -32px 0 32px; }
     .aiw-card { display: block; background: #F6F7FB; border: 1px solid #E6E8F2; border-radius: 18px; overflow: hidden; color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
-    .aiw-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(0,0,64,.08); }
+    .aiw-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(24,29,40,.10); }
     .aiw-wide { margin-bottom: 20px; }
     .aiw-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: #E6E8F2; }
     .aiw-step { position: relative; margin: 0; aspect-ratio: 16/10; overflow: hidden; background: #ddd; }
     .aiw-step img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .aiw-step figcaption { position: absolute; left: 8px; bottom: 8px; background: rgba(0,0,64,.78); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
-    .aiw-step + .aiw-step::before { content: '→'; position: absolute; left: -1px; top: 50%; transform: translate(-50%,-50%); z-index: 2; width: 22px; height: 22px; border-radius: 50%; background: #FFD600; color: #000080; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+    .aiw-step figcaption { position: absolute; left: 8px; bottom: 8px; background: rgba(24,29,40,.82); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
+    .aiw-step + .aiw-step::before { content: '→'; position: absolute; left: -1px; top: 50%; transform: translate(-50%,-50%); z-index: 2; width: 22px; height: 22px; border-radius: 50%; background: #5DA7AC; color: #fff; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
     .aiw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .aiw-media { aspect-ratio: 4/5; overflow: hidden; background: #ddd; }
     .aiw-media img, .aiw-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
     .aiw-body { padding: 18px 20px 20px; }
     .aiw-title { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 10px; word-break: keep-all; }
     .aiw-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-    .aiw-tools span { font-size: 11.5px; font-weight: 700; color: #000080; background: #E9EBFF; border-radius: 999px; padding: 4px 10px; }
+    .aiw-tools span { font-size: 11.5px; font-weight: 700; color: #2F7378; background: #E3F2F3; border-radius: 999px; padding: 4px 10px; }
     .aiw-flow { font-size: 13px; line-height: 1.7; color: var(--gray-mid); word-break: keep-all; }
     @media (max-width: 768px) {
       .aiw-steps { grid-template-columns: repeat(2, 1fr); }
@@ -1438,9 +1438,9 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <svg class="cj-blossom" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
     <g class="blossom-spin">
       <g transform="translate(500 500)">
-        <path fill="#2B2BD9" transform="rotate(0) translate(0 -250)"   d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
-        <path fill="#FFD600" transform="rotate(120) translate(0 -250)" d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
-        <path fill="#000080" transform="rotate(240) translate(0 -250)" d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
+        <path fill="#253371" transform="rotate(0) translate(0 -250)"   d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
+        <path fill="#5DA7AC" transform="rotate(120) translate(0 -250)" d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
+        <path fill="#2E4A8C" transform="rotate(240) translate(0 -250)" d="M0,-580 C265,-580 455,-345 455,-80 C455,200 250,400 0,400 C-250,400 -455,200 -455,-80 C-455,-345 -265,-580 0,-580 Z"/>
       </g>
     </g>
   </svg>
@@ -1488,7 +1488,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
     </div>
     <div class="hero-text">
       <div class="hero-brand">
-        <img class="hero-logo" src="mobidays-logo-white.png" alt="mobidays" style="height:30px;">
+        <img class="hero-logo" src="mobidays-logo-yellow.png" alt="mobidays" style="height:30px;">
         <span class="hero-pill">AI 영상 콘텐츠 크리에이터 지원</span>
       </div>
       <h1 class="hero-title">AI가 무너지는 지점을 먼저 찾고,<br>반복 가능한 조건으로 고정합니다.</h1>
