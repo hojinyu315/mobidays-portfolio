@@ -1297,43 +1297,10 @@ nav .logo, .hero-wordmark {
   font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
   letter-spacing: -0.02em;
 }
-    /* AI WORKS — 결과물별 툴·워크플로우 */
-    #aiworks { background: var(--white); border-bottom: 1px solid var(--border); }
-    .aiw-lead { font-size: 15px; color: var(--gray-mid); margin: -32px 0 32px; }
-    .aiw-card { display: block; background: #F6F7FB; border: 1px solid #E6E8F2; border-radius: 18px; overflow: hidden; color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
-    .aiw-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(24,29,40,.10); }
-    .aiw-wide { margin-bottom: 20px; }
-    .aiw-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: #E6E8F2; }
-    .aiw-step { position: relative; margin: 0; aspect-ratio: 16/10; overflow: hidden; background: #ddd; }
-    .aiw-step img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .aiw-step figcaption { position: absolute; left: 8px; bottom: 8px; background: rgba(24,29,40,.82); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; }
-    .aiw-step + .aiw-step::before { content: '→'; position: absolute; left: -1px; top: 50%; transform: translate(-50%,-50%); z-index: 2; width: 22px; height: 22px; border-radius: 50%; background: #5DA7AC; color: #fff; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
-    .aiw-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .aiw-media { aspect-ratio: 4/5; overflow: hidden; background: #ddd; }
-    .aiw-media img, .aiw-media video { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .aiw-body { padding: 18px 20px 20px; }
-    .aiw-title { font-size: 16px; font-weight: 700; color: var(--dark); margin-bottom: 10px; word-break: keep-all; }
-    .aiw-tools { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
-    .aiw-tools span { font-size: 11.5px; font-weight: 700; color: #2F7378; background: #E3F2F3; border-radius: 999px; padding: 4px 10px; }
-    .aiw-flow { font-size: 13px; line-height: 1.7; color: var(--gray-mid); word-break: keep-all; }
-    @media (max-width: 768px) {
-      .aiw-steps { grid-template-columns: repeat(2, 1fr); }
-      .aiw-grid { grid-template-columns: 1fr; }
-      .aiw-lead { margin-top: -24px; }
-    }
     .modal-title, .modal-list li, .modal-summary, .career-bullets li, .hero-pill, .project-card-title { text-wrap: balance; }
     p { text-wrap: pretty; }
     .hero-checks li { text-wrap: balance; }
-      .aiw-steps-2 { grid-template-columns: repeat(2, 1fr); }
-    .aiw-step.aiw-tall { aspect-ratio: 16/10; }
-    .aiw-step video { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .aiw-step.aiw-tall img { object-fit: cover; object-position: top center; }
-    .aiw-grid { grid-template-columns: repeat(2, 1fr); }
-    .aiw-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; aspect-ratio: 8/5; }
-    .aiw-grid .aiw-media:not(.aiw-pair) { aspect-ratio: 8/5; }
-    .aiw-grid .aiw-media img { object-position: center 30%; }
-    @media (max-width: 768px) { .aiw-steps-2 { grid-template-columns: 1fr 1fr; } .aiw-grid { grid-template-columns: 1fr; } }
-      .profile-name { white-space: nowrap; }
+        .profile-name { white-space: nowrap; }
   </style>
 <!-- Embedded Poppins subset: font license
 Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
@@ -1467,7 +1434,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
   <a href="#" class="logo">HOJIN YOO</a>
   <ul>
     <li><a href="#philosophy">About</a></li>
-    <li><a href="#aiworks">AI Works</a></li>
     <li><a href="#career">Career</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#activities">Activities</a></li>
@@ -1540,64 +1506,6 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
       <div class="philosophy-card">
         <p class="philosophy-quote">한 번 통한 방식은<br>팀이 반복할 수 있을 때 변화가 된다</p>
         <p class="philosophy-body">프롬프트를 즉흥으로 고치는 방식 자체가 병목이라고 봤습니다. 레퍼런스 템플릿으로 기준을 맞추자 작업자마다 캐릭터가 달라지는 문제가 줄었고, 썸네일도 통한 구성을 인수인계 문서로 남겨 이후 제작자들이 같은 원칙으로 작업하고 있습니다. 개인 노하우로 두면 한 번의 성공이고, 문서로 남기면 팀의 제작 방식이 됩니다.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AI WORKS -->
-<section id="aiworks">
-  <div class="section-inner">
-    <p class="section-label">AI Works</p>
-    <h2 class="section-title">AI WORKS</h2>
-    <p class="aiw-lead">결과물마다 사용한 툴과 제작 흐름을 함께 적었습니다.</p>
-
-    <article class="aiw-card aiw-wide">
-      <div class="aiw-steps"><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20원본.jpeg" alt="원본 장면" loading="lazy"><figcaption>원본 장면</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20제미나이.png" alt="Gemini 수정" loading="lazy"><figcaption>Gemini 수정</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20영상화.png" alt="Kling 영상화" loading="lazy"><figcaption>Kling 영상화</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/초코%20릴스.png" alt="최종 영상" loading="lazy"><figcaption>최종 영상</figcaption></figure></div>
-      <div class="aiw-body">
-        <div class="aiw-title">극장판 3기 예고편 — 본편에 없는 홍보 장면</div>
-        <div class="aiw-tools"><span>Gemini</span><span>Kling</span><span>Premiere Pro</span></div>
-        <p class="aiw-flow">원본 장면 → Gemini로 장면 수정 → Kling 영상화 → 예고편에 삽입</p>
-      </div>
-    </article>
-
-    <article class="aiw-card aiw-wide">
-      <div class="aiw-steps"><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20원본.jpg" alt="원본 장면" loading="lazy"><figcaption>원본 장면</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20의상%20수정.jpeg" alt="Gemini 의상 수정" loading="lazy"><figcaption>Gemini 의상 수정</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20이미지.jpeg" alt="Gemini 장면 수정" loading="lazy"><figcaption>Gemini 장면 수정</figcaption></figure><figure class="aiw-step"><img src="https://hojinyu315.github.io/naverwebtoon/images/마카롱%20릴스2.png" alt="최종 영상" loading="lazy"><figcaption>최종 영상</figcaption></figure></div>
-      <div class="aiw-body">
-        <div class="aiw-title">브레드이발소 릴스 — 원작에 없는 장면</div>
-        <div class="aiw-tools"><span>Gemini</span></div>
-        <p class="aiw-flow">원본 장면 → Gemini로 의상·장면 수정 → 최종 영상</p>
-      </div>
-    </article>
-
-    <article class="aiw-card aiw-wide">
-      <div class="aiw-steps aiw-steps-2">
-        <figure class="aiw-step aiw-tall"><img src="crehoho-aigen.png" alt="Kling 영상 생성 프롬프트" loading="lazy"><figcaption>Kling 2.5 Turbo 프롬프트</figcaption></figure>
-        <figure class="aiw-step aiw-tall"><video src="crehoho-video1.mp4" autoplay muted loop playsinline></video><figcaption>생성 영상</figcaption></figure>
-      </div>
-      <div class="aiw-body">
-        <div class="aiw-title">Crehoho — 이미지를 영상으로</div>
-        <div class="aiw-tools"><span>Kling</span></div>
-        <p class="aiw-flow">Crehoho 이미지 → 빛의 깜빡임·물결·구름 움직임과 인물·자전거의 정지를 문장으로 지정 → Kling 영상화</p>
-      </div>
-    </article>
-
-    <div class="aiw-grid">
-      <a class="aiw-card" href="https://www.instagram.com/reel/DJlhVdpvVAf/" target="_blank" rel="noopener">
-        <div class="aiw-media"><img src="https://hojinyu315.github.io/naverwebtoon/images/reel4_치즈그리는대로.jpg" alt="'치즈가 그리는대로!' 릴스" loading="lazy"></div>
-        <div class="aiw-body">
-          <div class="aiw-title">'치즈가 그리는대로!' 릴스 — 274만 회</div>
-          <div class="aiw-tools"><span>Higgsfield (나노바나나·Kling)</span><span>Gemini</span><span>Photoshop</span></div>
-          <p class="aiw-flow">패러디 컨셉 레퍼런스 → 나노바나나·Gemini 생성 비교 → Photoshop 보정 → Kling 영상화</p>
-        </div>
-      </a>
-      <div class="aiw-card">
-        <div class="aiw-media aiw-pair"><img src="crehoho-img2.png" alt="Crehoho Behind 이미지" loading="lazy"><video src="crehoho-video2.mp4" autoplay muted loop playsinline></video></div>
-        <div class="aiw-body">
-          <div class="aiw-title">Crehoho — 'Behind' 이미지·영상</div>
-          <div class="aiw-tools"><span>Photoshop</span><span>Gemini</span><span>Firefly</span><span>Kling</span></div>
-          <p class="aiw-flow">Photoshop 합성(Gemini 오브젝트 생성, Firefly 생성 채우기) → 영상화</p>
-        </div>
       </div>
     </div>
   </div>
